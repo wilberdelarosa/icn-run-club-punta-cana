@@ -531,7 +531,7 @@ footer{padding:64px var(--pad) 32px;border-top:1px solid var(--border)}
   transition: width 0.08s ease-out;
 }
 
-/* === WIZ KHALIFA - SEE YOU AGAIN / YICCEN (COMPACT RUNNER AUDIO HUD) === */
+/* === WIZ KHALIFA - YICCEN (COMPACT RUNNER AUDIO HUD) === */
 .music-player-hud {
   position: fixed;
   bottom: 24px;
@@ -1518,22 +1518,22 @@ figure:hover img {
 <!-- === BARRA DE PROGRESO DE SCROLL SUPERIOR === -->
 <div id="pageScrollProgress" aria-hidden="true"></div>
 
-<!-- === WIZ KHALIFA "SEE YOU AGAIN" (YICCEN) COMPACT HUD === -->
+<!-- === WIZ KHALIFA "YICCEN" COMPACT HUD === -->
 <div class="music-offscreen-host">
   <div id="ytPlayerContainer"></div>
 </div>
 
-<div class="music-player-hud" id="musicPlayerHud" role="region" aria-label="Reproductor de musica Wiz Khalifa - See You Again">
+<div class="music-player-hud" id="musicPlayerHud" role="region" aria-label="Reproductor de musica Wiz Khalifa - Yiccen">
   <div class="music-avatar-wrap">
     <svg class="music-scroll-ring" viewBox="0 0 48 48" aria-hidden="true">
       <circle class="ring-bg" cx="24" cy="24" r="22"></circle>
       <circle class="ring-val" id="musicScrollCircle" cx="24" cy="24" r="22"></circle>
     </svg>
-    <img src="assets/music/see-you-again-cover.jpg" alt="Wiz Khalifa - See You Again" class="music-avatar" id="musicCover">
+    <img src="assets/music/yiccen-cover.jpg" alt="Wiz Khalifa - Yiccen" class="music-avatar" id="musicCover">
   </div>
   <div class="music-info">
-    <div class="music-title">SEE YOU AGAIN</div>
-    <div class="music-artist">Wiz Khalifa ft. Charlie Puth</div>
+    <div class="music-title">YICCEN</div>
+    <div class="music-artist">Wiz Khalifa</div>
   </div>
   <div class="music-bars" aria-hidden="true">
     <span class="music-bar"></span>
@@ -1541,7 +1541,7 @@ figure:hover img {
     <span class="music-bar"></span>
     <span class="music-bar"></span>
   </div>
-  <button class="music-btn" id="musicPlayBtn" type="button" aria-label="Reproducir See You Again">
+  <button class="music-btn" id="musicPlayBtn" type="button" aria-label="Reproducir Yiccen">
     <svg id="musicPlayIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
     <svg id="musicPauseIcon" viewBox="0 0 24 24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
   </button>
@@ -1684,13 +1684,13 @@ figure:hover img {
       hud.classList.add('is-playing');
       playIcon.style.display = 'none';
       pauseIcon.style.display = 'block';
-      playBtn.setAttribute('aria-label', 'Pausar See You Again');
+      playBtn.setAttribute('aria-label', 'Pausar Yiccen');
     } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
       isPlaying = false;
       hud.classList.remove('is-playing');
       playIcon.style.display = 'block';
       pauseIcon.style.display = 'none';
-      playBtn.setAttribute('aria-label', 'Reproducir See You Again');
+      playBtn.setAttribute('aria-label', 'Reproducir Yiccen');
     }
   }
 
@@ -1725,5 +1725,4 @@ figure:hover img {
 })();
 </script>
 
-</body>
 </html>
